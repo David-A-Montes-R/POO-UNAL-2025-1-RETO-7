@@ -1,8 +1,3 @@
-# Otra vez el menú:
-
-Para este reto se emplea una `queue` de Python para adminstrar una serie de objetos de la clase `Order`. también a manera de ejercicio se define una `namedtuple` "menu del día", para dar un ejemplo de menú del día. Para finalizar se usa de manera breve un diccionario para que cada orden que se crea agregue un nuevo elemento al menú almacenado en un archio `.json`
-
-```python
 # restaurant case revisted
 from queue import Queue
 from collections import namedtuple
@@ -568,4 +563,3 @@ if __name__ == "__main__":
       orden_actual = cola_ordenes_fifo.get()
       print(f"Procesando la orden de {orden_actual.order[0].name} pedida por {orden_actual.order[0].client}.")
       print("orden procesada exitosamente")
-```
